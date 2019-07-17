@@ -1,0 +1,1938 @@
+Started GET "/" for 127.0.0.1 at 2019-03-12 18:39:03 +0530
+Processing by Rails::WelcomeController#index as HTML
+Completed 500 Internal Server Error in 498ms
+
+
+  
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.6.1) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.6.1) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.6.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.6.1) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.6.1) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.6.1) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.6.1) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.6.1) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.6.1) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.6.1) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.6.1) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.6.1) lib/active_record/railties/controller_runtime.rb:26:in `cleanup_view_runtime'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (5.1.6.1) lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+actionpack (5.1.6.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6.1) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+react-rails (2.4.7) lib/react/rails/controller_lifecycle.rb:31:in `use_react_component_helper'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (5.1.6.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.2) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-12 18:39:47 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/saiprasad/.rvm/gems/ruby-2.3.4/gems/railties-5.1.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/saiprasad/.rvm/gems/ruby-2.3.4/gems/railties-5.1.6.1/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 12ms (Views: 8.2ms)
+
+
+Started GET "/comments/total_messages.json?entity_id=5b8e723c79feae82330005f6" for 127.0.0.1 at 2019-03-13 19:02:25 +0530
+Started GET "/users/all_users.json" for 127.0.0.1 at 2019-03-13 19:02:25 +0530
+Started GET "/comments/total_messages.json?entity_id=5bbb4cf679feae8485000eb2" for 127.0.0.1 at 2019-03-13 19:02:25 +0530
+Started GET "/comments/total_messages.json?entity_id=5bbf102279feae10e9000338" for 127.0.0.1 at 2019-03-13 19:02:25 +0530
+Started GET "/indicator_data/5bbf270a79feae47fc000236/display.json" for 127.0.0.1 at 2019-03-13 19:02:25 +0530
+  
+  
+  
+  
+  
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+ActionController::RoutingError (No route matches [GET] "/users/all_users.json"):
+  
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+ActionController::RoutingError (No route matches [GET] "/indicator_data/5bbf270a79feae47fc000236/display.json"):
+  
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/comments/total_messages.json?entity_id=5bb4b45d79feaebd93001113" for 127.0.0.1 at 2019-03-13 19:02:27 +0530
+Started GET "/flexmonster/flexmonster.css?2.6.3" for 127.0.0.1 at 2019-03-13 19:02:27 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+Started GET "/comments/total_messages.json?entity_id=5bbb4fb279feae8485000f99" for 127.0.0.1 at 2019-03-13 19:02:27 +0530
+  
+  
+  
+Started GET "/comments/total_messages.json?entity_id=5b8e7b4879feae823300096d" for 127.0.0.1 at 2019-03-13 19:02:27 +0530
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/flexmonster/flexmonster.css"):
+Started GET "/comments/total_messages.json?entity_id=5b8f892379feae69a10005df" for 127.0.0.1 at 2019-03-13 19:02:27 +0530
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+  
+  
+  
+  
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/indicator_data/5bbf2cc679feae47fc0004f0/display.json" for 127.0.0.1 at 2019-03-13 19:02:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/indicator_data/5bbf2cc679feae47fc0004f0/display.json"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/comments/total_messages.json?entity_id=5bbb6f2a79feae84850016fd" for 127.0.0.1 at 2019-03-13 19:02:30 +0530
+Started GET "/comments/total_messages.json?entity_id=5b8e64bb79feae8233000064" for 127.0.0.1 at 2019-03-13 19:02:30 +0530
+Started GET "/comments/total_messages.json?entity_id=5bbc535279feae28d5000c7b" for 127.0.0.1 at 2019-03-13 19:02:30 +0530
+  
+  
+  
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+  
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/analytics/get_csv_data?analytic_id=5bbb4cf679feae8485000eb2&dashboard=true&431245541" for 127.0.0.1 at 2019-03-13 19:02:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/analytics/get_csv_data"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/comments/total_messages.json?entity_id=5c49a99279feae460500043b" for 127.0.0.1 at 2019-03-13 19:02:33 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/comments/total_messages.json"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-13 19:02:33 +0530
+Processing by Rails::WelcomeController#index as HTML
+Completed 500 Internal Server Error in 446ms
+
+
+  
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.6.1) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.6.1) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.6.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.6.1) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.6.1) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:69:in `instance_eval'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:69:in `block in execute_hook'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:60:in `with_execution_control'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:65:in `execute_hook'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:50:in `block in run_load_hooks'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:49:in `each'
+activesupport (5.1.6.1) lib/active_support/lazy_load_hooks.rb:49:in `run_load_hooks'
+activerecord (5.1.6.1) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.6.1) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.6.1) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.6.1) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.6.1) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.6.1) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.6.1) lib/active_record/railties/controller_runtime.rb:26:in `cleanup_view_runtime'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (5.1.6.1) lib/action_controller/metal/implicit_render.rb:33:in `default_render'
+actionpack (5.1.6.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6.1) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.6.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6.1) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6.1) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6.1) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6.1) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6.1) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6.1) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-13 22:19:42 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/saiprasad/.rvm/gems/ruby-2.3.4/gems/railties-5.1.6.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/saiprasad/.rvm/gems/ruby-2.3.4/gems/railties-5.1.6.1/lib/rails/templates/rails/welcome/index.html.erb (5.9ms)
+Completed 200 OK in 486ms (Views: 18.7ms)
+
+
+Started GET "/hme" for 127.0.0.1 at 2019-03-13 22:19:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/hme"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/home" for 127.0.0.1 at 2019-03-13 22:19:52 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/homes" for 127.0.0.1 at 2019-03-13 22:19:59 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/homes"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/homes" for 127.0.0.1 at 2019-03-13 22:20:05 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/homes"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/home" for 127.0.0.1 at 2019-03-13 22:20:12 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/home" for 127.0.0.1 at 2019-03-13 22:20:14 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-13 22:24:25 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (256.2ms)
+Completed 500 Internal Server Error in 278ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x007fc5e8001e68>:0x007fc5e6215eb8>):
+    1: <h1>Homes#index</h1>
+    2: <p>Find me in app/views/homes/index.html.erb</p>
+    3: 
+    4: <%= react_component 'Main' %>
+  
+app/views/homes/index.html.erb:4:in `_app_views_homes_index_html_erb___1300038416954503278_70243988815900'
+Started GET "/" for 127.0.0.1 at 2019-03-13 22:28:41 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (157.4ms)
+Completed 500 Internal Server Error in 364ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x007fbfe28f2c40>:0x007fbfe037cd08>):
+    1: <h1>Homes#index</h1>
+    2: <p>Find me in app/views/homes/index.html.erb</p>
+    3: 
+    4: <%= react_component 'Main' %>
+  
+app/views/homes/index.html.erb:4:in `_app_views_homes_index_html_erb__1947948668080195684_70231025761920'
+Started GET "/homes" for 127.0.0.1 at 2019-03-13 22:28:54 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/homes"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/homes" for 127.0.0.1 at 2019-03-13 22:29:02 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/homes"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-13 22:29:05 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (158.1ms)
+Completed 500 Internal Server Error in 172ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x007fbfe28f2c40>:0x007fbfe021f190>):
+    1: <h1>Homes#index</h1>
+    2: <p>Find me in app/views/homes/index.html.erb</p>
+    3: 
+    4: <%= react_component 'Main' %>
+  
+app/views/homes/index.html.erb:4:in `_app_views_homes_index_html_erb__1947948668080195684_70231037914180'
+Started GET "/" for 127.0.0.1 at 2019-03-13 22:32:28 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (187.3ms)
+Completed 500 Internal Server Error in 206ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x007fbfe28f2c40>:0x007fbfdf5ee3a8>):
+    1: <h1>Homes#index</h1>
+    2: <p>Find me in app/views/homes/index.html.erb</p>
+    3: 
+    4: <%= react_component 'Main' %>
+  
+app/views/homes/index.html.erb:4:in `_app_views_homes_index_html_erb__1947948668080195684_70231031510780'
+Started GET "/" for 127.0.0.1 at 2019-03-13 22:33:35 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (167.2ms)
+Completed 500 Internal Server Error in 181ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x007fbfe28f2c40>:0x007fbfdfe808e0>):
+    1: <%= react_component 'Main' %>
+  
+app/views/homes/index.html.erb:1:in `_app_views_homes_index_html_erb__1947948668080195684_70231036006300'
+Started GET "/" for 127.0.0.1 at 2019-03-13 22:35:04 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (181.9ms)
+Completed 500 Internal Server Error in 198ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x007fbfe28f2c40>:0x007fbfe0295250>):
+    1: <%= react_component('HelloMessage', name: 'John') %>
+  
+app/views/homes/index.html.erb:1:in `_app_views_homes_index_html_erb__1947948668080195684_70231038144320'
+Started POST "/__web_console/repl_sessions/8b8a104952a23fe7aecbb169d41c44fa/trace" for 127.0.0.1 at 2019-03-13 22:35:13 +0530
+Started POST "/__web_console/repl_sessions/8b8a104952a23fe7aecbb169d41c44fa/trace" for 127.0.0.1 at 2019-03-13 22:35:15 +0530
+Started POST "/__web_console/repl_sessions/8b8a104952a23fe7aecbb169d41c44fa/trace" for 127.0.0.1 at 2019-03-13 22:35:15 +0530
+Started PUT "/__web_console/repl_sessions/8b8a104952a23fe7aecbb169d41c44fa" for 127.0.0.1 at 2019-03-13 22:35:21 +0530
+Started PUT "/__web_console/repl_sessions/8b8a104952a23fe7aecbb169d41c44fa" for 127.0.0.1 at 2019-03-13 22:35:21 +0530
+Started PUT "/__web_console/repl_sessions/8b8a104952a23fe7aecbb169d41c44fa" for 127.0.0.1 at 2019-03-13 22:35:26 +0530
+Started PUT "/__web_console/repl_sessions/8b8a104952a23fe7aecbb169d41c44fa" for 127.0.0.1 at 2019-03-13 22:35:30 +0530
+Started PUT "/__web_console/repl_sessions/8b8a104952a23fe7aecbb169d41c44fa" for 127.0.0.1 at 2019-03-13 22:35:33 +0530
+Started PUT "/__web_console/repl_sessions/8b8a104952a23fe7aecbb169d41c44fa" for 127.0.0.1 at 2019-03-13 22:35:37 +0530
+Started GET "/" for 127.0.0.1 at 2019-03-13 22:51:48 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (354.9ms)
+Completed 500 Internal Server Error in 383ms
+
+
+  
+ActionView::Template::Error (undefined method `react_component' for #<#<Class:0x007fbfe28f2c40>:0x007fbfde9e4670>):
+    1: <%= react_component('HelloMessage', name: 'John') %>
+  
+app/views/homes/index.html.erb:1:in `_app_views_homes_index_html_erb__1947948668080195684_70231025200860'
+Started GET "/" for 127.0.0.1 at 2019-03-13 22:59:37 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (4.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 17059ms (Views: 16670.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:00:10 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 59ms (Views: 53.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:00:49 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 3235ms (Views: 2819.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:02:56 +0530
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:02:56 +0530
+Processing by HomesController#index as HTML
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (4.8ms)
+  Rendered homes/index.html.erb within layouts/application (2.3ms)
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:02:57 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7080ms (Views: 6674.0ms)
+
+
+Completed 200 OK in 7097ms (Views: 6705.0ms)
+
+
+Completed 200 OK in 6005ms (Views: 5872.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:03:41 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 40.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:04:26 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 7097ms (Views: 7093.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:06:05 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 8701ms (Views: 8696.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:07:01 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 12ms
+
+
+  
+SyntaxError (/Users/saiprasad/react_with_rails/app/views/homes/index.html.erb:1: syntax error, unexpected tLABEL
+...mponent 'HelloMessage',  (name: 'John') );
+...                               ^):
+  
+app/views/homes/index.html.erb:1: syntax error, unexpected tLABEL
+Started PUT "/__web_console/repl_sessions/744549f6732cb0d4798da019a17b0128" for 127.0.0.1 at 2019-03-13 23:07:13 +0530
+Started PUT "/__web_console/repl_sessions/744549f6732cb0d4798da019a17b0128" for 127.0.0.1 at 2019-03-13 23:07:13 +0530
+Started PUT "/__web_console/repl_sessions/744549f6732cb0d4798da019a17b0128" for 127.0.0.1 at 2019-03-13 23:07:19 +0530
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:08:17 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+SyntaxError (/Users/saiprasad/react_with_rails/app/views/homes/index.html.erb:1: syntax error, unexpected tLABEL
+...mponent 'HelloMessage',  (name: 'John') );
+...                               ^):
+  
+app/views/homes/index.html.erb:1: syntax error, unexpected tLABEL
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:08:28 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 7493ms (Views: 7488.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:09:15 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (13.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 9875ms (Views: 9454.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:10:15 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 56ms (Views: 51.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:14:52 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 88ms (Views: 82.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:16:40 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 9d1cdb30b35bcf5800b6
+Version: webpack 4.29.6
+Time: 2576ms
+Built at: 2019-03-13 23:16:47
+                                          Asset      Size            Chunks             Chunk Names
+         js/application-5559abf72d18c31b0f3b.js  6.25 KiB       application  [emitted]  application
+     js/application-5559abf72d18c31b0f3b.js.map  3.53 KiB       application  [emitted]  application
+         js/hello_react-5550f631e22bfdc56ddd.js   998 KiB       hello_react  [emitted]  hello_react
+     js/hello_react-5550f631e22bfdc56ddd.js.map  1.12 MiB       hello_react  [emitted]  hello_react
+    js/server_rendering-0e9cf77a816f7ce29941.js   1.1 MiB  server_rendering  [emitted]  server_rendering
+js/server_rendering-0e9cf77a816f7ce29941.js.map  1.26 MiB  server_rendering  [emitted]  server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]  
+Entrypoint application = js/application-5559abf72d18c31b0f3b.js js/application-5559abf72d18c31b0f3b.js.map
+Entrypoint hello_react = js/hello_react-5550f631e22bfdc56ddd.js js/hello_react-5550f631e22bfdc56ddd.js.map
+Entrypoint server_rendering = js/server_rendering-0e9cf77a816f7ce29941.js js/server_rendering-0e9cf77a816f7ce29941.js.map
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 210 bytes {server_rendering} [built]
+[./app/javascript/packs/application.js] 2.35 KiB {application} [built] [failed] [1 error]
+[./app/javascript/packs/hello_react.jsx] 995 bytes {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {hello_react} {server_rendering} [built]
+    + 28 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/saiprasad/react_with_rails/app/javascript/packs/application.js: Unexpected token, expected ";" (17:8)
+
+  15 | // const images = require.context('../images', true)
+  16 | // const imagePath = (name) => images(name, true)
+> 17 | require 'opal'
+     |         ^
+  18 | require 'opal_ujs'
+  19 | require 'turbolinks'
+  20 | require 'react'
+    at Object.raise (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:3831:17)
+    at Object.unexpected (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:5143:16)
+    at Object.semicolon (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:5131:40)
+    at Object.parseExpressionStatement (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:7779:10)
+    at Object.parseStatementContent (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:7383:19)
+    at Object.parseStatement (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:7243:17)
+    at Object.parseBlockOrModuleBlockBody (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:7810:25)
+    at Object.parseBlockBody (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:7797:10)
+    at Object.parseTopLevel (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:7181:10)
+    at Object.parse (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:8660:17)
+    at parse (/Users/saiprasad/react_with_rails/node_modules/@babel/parser/lib/index.js:10660:38)
+    at parser (/Users/saiprasad/react_with_rails/node_modules/@babel/core/lib/transformation/normalize-file.js:170:34)
+    at normalizeFile (/Users/saiprasad/react_with_rails/node_modules/@babel/core/lib/transformation/normalize-file.js:138:11)
+    at runSync (/Users/saiprasad/react_with_rails/node_modules/@babel/core/lib/transformation/index.js:44:43)
+    at runAsync (/Users/saiprasad/react_with_rails/node_modules/@babel/core/lib/transformation/index.js:35:14)
+    at process.nextTick (/Users/saiprasad/react_with_rails/node_modules/@babel/core/lib/transform.js:34:34)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+
+Completed 200 OK in 6822ms (Views: 6818.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:17:23 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 4414ms (Views: 4408.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:17:41 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 5211ms (Views: 5206.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:18:57 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 63a453f5ea0aa03d38e3
+Version: webpack 4.29.6
+Time: 2618ms
+Built at: 2019-03-13 23:19:03
+                                          Asset      Size            Chunks             Chunk Names
+         js/application-f22731627c79f3494002.js   966 KiB       application  [emitted]  application
+     js/application-f22731627c79f3494002.js.map  1.09 MiB       application  [emitted]  application
+         js/hello_react-5550f631e22bfdc56ddd.js   998 KiB       hello_react  [emitted]  hello_react
+     js/hello_react-5550f631e22bfdc56ddd.js.map  1.12 MiB       hello_react  [emitted]  hello_react
+    js/server_rendering-0e9cf77a816f7ce29941.js   1.1 MiB  server_rendering  [emitted]  server_rendering
+js/server_rendering-0e9cf77a816f7ce29941.js.map  1.26 MiB  server_rendering  [emitted]  server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]  
+Entrypoint application = js/application-f22731627c79f3494002.js js/application-f22731627c79f3494002.js.map
+Entrypoint hello_react = js/hello_react-5550f631e22bfdc56ddd.js js/hello_react-5550f631e22bfdc56ddd.js.map
+Entrypoint server_rendering = js/server_rendering-0e9cf77a816f7ce29941.js js/server_rendering-0e9cf77a816f7ce29941.js.map
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 210 bytes {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.28 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 995 bytes {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} {hello_react} {server_rendering} [built]
+    + 28 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve './components/HelloMessage' in '/Users/saiprasad/react_with_rails/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 23:0-53
+
+Completed 200 OK in 6401ms (Views: 6395.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:19:47 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 7ebb2c6d635c3c5ebba6
+Version: webpack 4.29.6
+Time: 2527ms
+Built at: 2019-03-13 23:19:53
+                                          Asset      Size            Chunks             Chunk Names
+         js/application-6a55f676f46ae46573c1.js   966 KiB       application  [emitted]  application
+     js/application-6a55f676f46ae46573c1.js.map  1.09 MiB       application  [emitted]  application
+         js/hello_react-5550f631e22bfdc56ddd.js   998 KiB       hello_react  [emitted]  hello_react
+     js/hello_react-5550f631e22bfdc56ddd.js.map  1.12 MiB       hello_react  [emitted]  hello_react
+    js/server_rendering-0e9cf77a816f7ce29941.js   1.1 MiB  server_rendering  [emitted]  server_rendering
+js/server_rendering-0e9cf77a816f7ce29941.js.map  1.26 MiB  server_rendering  [emitted]  server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]  
+Entrypoint application = js/application-6a55f676f46ae46573c1.js js/application-6a55f676f46ae46573c1.js.map
+Entrypoint hello_react = js/hello_react-5550f631e22bfdc56ddd.js js/hello_react-5550f631e22bfdc56ddd.js.map
+Entrypoint server_rendering = js/server_rendering-0e9cf77a816f7ce29941.js js/server_rendering-0e9cf77a816f7ce29941.js.map
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 210 bytes {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.27 KiB {application} [built]
+[./app/javascript/packs/hello_react.jsx] 995 bytes {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} {hello_react} {server_rendering} [built]
+    + 28 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve './components' in '/Users/saiprasad/react_with_rails/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 23:0-40
+
+Completed 200 OK in 6212ms (Views: 6207.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:23:03 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (2.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry should be an instance of function
+      -> A Function returning an entry object, an entry string, an entry array or a promise to these things.
+    * configuration.entry should not be empty.
+      -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+    * configuration.entry should be a string.
+      -> An entry point without name. The string is resolved to a module which is loaded upon startup.
+    * configuration.entry should be an array:
+      [non-empty string]
+
+
+Completed 200 OK in 3902ms (Views: 3897.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:23:14 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry should be an instance of function
+      -> A Function returning an entry object, an entry string, an entry array or a promise to these things.
+    * configuration.entry should not be empty.
+      -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+    * configuration.entry should be a string.
+      -> An entry point without name. The string is resolved to a module which is loaded upon startup.
+    * configuration.entry should be an array:
+      [non-empty string]
+
+
+Completed 200 OK in 1732ms (Views: 1724.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:23:34 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry should be an instance of function
+      -> A Function returning an entry object, an entry string, an entry array or a promise to these things.
+    * configuration.entry should not be empty.
+      -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+    * configuration.entry should be a string.
+      -> An entry point without name. The string is resolved to a module which is loaded upon startup.
+    * configuration.entry should be an array:
+      [non-empty string]
+
+
+Completed 200 OK in 1594ms (Views: 1590.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-13 23:23:46 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (2.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry should be an instance of function
+      -> A Function returning an entry object, an entry string, an entry array or a promise to these things.
+    * configuration.entry should not be empty.
+      -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+    * configuration.entry should be a string.
+      -> An entry point without name. The string is resolved to a module which is loaded upon startup.
+    * configuration.entry should be an array:
+      [non-empty string]
+
+
+Completed 200 OK in 2296ms (Views: 2291.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:47:38 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (26.3ms)
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:47:41 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+Completed 200 OK in 15907ms (Views: 15083.0ms)
+
+
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry should be an instance of function
+      -> A Function returning an entry object, an entry string, an entry array or a promise to these things.
+    * configuration.entry should not be empty.
+      -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+    * configuration.entry should be a string.
+      -> An entry point without name. The string is resolved to a module which is loaded upon startup.
+    * configuration.entry should be an array:
+      [non-empty string]
+
+
+Completed 200 OK in 16781ms (Views: 16776.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:48:13 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry should be an instance of function
+      -> A Function returning an entry object, an entry string, an entry array or a promise to these things.
+    * configuration.entry should not be empty.
+      -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+    * configuration.entry should be a string.
+      -> An entry point without name. The string is resolved to a module which is loaded upon startup.
+    * configuration.entry should be an array:
+      [non-empty string]
+
+
+Completed 200 OK in 2842ms (Views: 2836.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:48:26 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry should be an instance of function
+      -> A Function returning an entry object, an entry string, an entry array or a promise to these things.
+    * configuration.entry should not be empty.
+      -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+    * configuration.entry should be a string.
+      -> An entry point without name. The string is resolved to a module which is loaded upon startup.
+    * configuration.entry should be an array:
+      [non-empty string]
+
+
+Completed 200 OK in 1615ms (Views: 1612.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:48:58 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry should be an instance of function
+      -> A Function returning an entry object, an entry string, an entry array or a promise to these things.
+    * configuration.entry should not be empty.
+      -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+    * configuration.entry should be a string.
+      -> An entry point without name. The string is resolved to a module which is loaded upon startup.
+    * configuration.entry should be an array:
+      [non-empty string]
+
+
+Completed 200 OK in 1624ms (Views: 1620.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:49:23 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (17.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry should be an instance of function
+      -> A Function returning an entry object, an entry string, an entry array or a promise to these things.
+    * configuration.entry should not be empty.
+      -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+    * configuration.entry should be a string.
+      -> An entry point without name. The string is resolved to a module which is loaded upon startup.
+    * configuration.entry should be an array:
+      [non-empty string]
+
+
+Completed 200 OK in 6482ms (Views: 6060.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:50:31 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry should be an instance of function
+      -> A Function returning an entry object, an entry string, an entry array or a promise to these things.
+    * configuration.entry should not be empty.
+      -> Multiple entry bundles are created. The key is the chunk name. The value can be a string or an array.
+    * configuration.entry should be a string.
+      -> An entry point without name. The string is resolved to a module which is loaded upon startup.
+    * configuration.entry should be an array:
+      [non-empty string]
+
+
+Completed 200 OK in 3970ms (Views: 3964.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:51:41 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 7110ms (Views: 7104.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:52:23 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 7510ms (Views: 7503.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:54:11 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 7548ms (Views: 7543.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:55:01 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 7814ms (Views: 7809.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:57:24 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 94ms (Views: 87.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:57:29 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 40.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 18:57:34 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (114.2ms)
+Completed 200 OK in 146ms (Views: 141.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 22:30:38 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (16.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 11564ms (Views: 11123.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 22:34:01 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 7873ms (Views: 7867.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 22:37:55 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (2.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 6943ms (Views: 6939.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 22:38:36 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 6381ms (Views: 6376.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 22:39:03 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 3377ms (Views: 2954.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 22:39:16 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 75ms (Views: 70.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 22:41:29 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 7823ms (Views: 7817.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 22:42:36 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 59749382df034c09cd34
+Version: webpack 4.29.6
+Time: 3189ms
+Built at: 2019-03-14 22:42:44
+                                          Asset       Size            Chunks             Chunk Names
+         js/application-aa19a6a3d6fde11acb91.js   1.13 MiB       application  [emitted]  application
+     js/application-aa19a6a3d6fde11acb91.js.map   1.29 MiB       application  [emitted]  application
+    js/server_rendering-29860441046beaee34db.js   1.13 MiB  server_rendering  [emitted]  server_rendering
+js/server_rendering-29860441046beaee34db.js.map   1.29 MiB  server_rendering  [emitted]  server_rendering
+                                  manifest.json  738 bytes                    [emitted]  
+Entrypoint application = js/application-aa19a6a3d6fde11acb91.js js/application-aa19a6a3d6fde11acb91.js.map
+Entrypoint server_rendering = js/server_rendering-29860441046beaee34db.js js/server_rendering-29860441046beaee34db.js.map
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 198 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 1.04 KiB {application} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} {server_rendering} [built]
+    + 28 hidden modules
+
+ERROR in ./app/javascript/components/HelloWorld.jsx
+Module not found: Error: Can't resolve 'props' in '/Users/saiprasad/react_with_rails/app/javascript/components'
+ @ ./app/javascript/components/HelloWorld.jsx 21:0-26
+ @ ./app/javascript/components sync ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 7485ms (Views: 7481.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 22:45:35 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (2.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 6714ms (Views: 6706.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-14 22:46:03 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 6014ms (Views: 6011.3ms)
+
+
+Started GET "/indicator_data/nested_records.json?indicator_id=5a423b8979feae1564000205&limit=50&page=1" for 127.0.0.1 at 2019-03-14 22:47:08 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/indicator_data/nested_records.json"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-17 15:00:10 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 10136ms (Views: 9574.4ms)
+
+
+Started GET "/incident_data" for 127.0.0.1 at 2019-07-03 11:45:00 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/incident_data"):
+  
+actionpack (5.1.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.6.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-07-03 11:45:02 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7681ms (Views: 7286.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 11:45:14 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 69ms (Views: 63.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 11:45:44 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 9484ms (Views: 9482.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 11:46:03 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 5036ms (Views: 5034.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-03 12:01:42 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (2.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/saiprasad/react_with_rails/public/packs
+Completed 200 OK in 8516ms (Views: 8509.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-15 18:40:21 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (3.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/omkarkakade/CMS-react-with-rails/public/packs
+Completed 200 OK in 14688ms (Views: 14025.9ms)
+
+
+Started GET "/" for ::1 at 2019-07-15 18:42:03 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 30.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-15 18:42:34 +0530
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 31.7ms)
+
+
