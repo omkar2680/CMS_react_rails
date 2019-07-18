@@ -10,7 +10,4 @@ class HelloWorld extends React.Component {
   }
 }
 
-HelloWorld.propTypes = {
-  name: PropTypes.string
-};
 export default HelloWorld
