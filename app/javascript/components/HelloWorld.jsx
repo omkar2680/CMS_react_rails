@@ -4,13 +4,13 @@ class HelloWorld extends React.Component {
   render () {
     return (
       <div>
-        Greeting: {this.props.greeting}
+        Greeting: {this.props.name}
       </div>
     );
   }
 }
 
 HelloWorld.propTypes = {
-  greeting: PropTypes.string
+  name: PropTypes.string
 };
 export default HelloWorld
