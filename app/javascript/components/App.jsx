@@ -1,12 +1,14 @@
-import React from "react"
-class HelloWorld extends React.Component {
-  render () {
+import React, { Component } from 'react'
+import AdminPanel from './admin_panel'
+
+
+class App extends Component {
+
+  render() {
     return (
-      <div>
-        Greeting : {this.props.greeting}
-      </div>
+     <AdminPanel />
     );
   }
 }
 
-export default HelloWorld
+export default App;
